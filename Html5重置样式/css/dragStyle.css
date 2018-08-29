@@ -1,0 +1,17 @@
+.targetStyle {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #0a5466;
+}
+
+.sourceStyle {
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #0a5466;
+}
+
+.imgstyle {
+    height: 350px;
+}

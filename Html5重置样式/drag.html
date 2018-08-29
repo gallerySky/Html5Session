@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Drag</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/dragStyle.css">
+
+    <script>
+        function drag(ev) {
+            var imagId = ev.target.id;
+            ev.dataTransfer.setData("imageId", imagId);
+        }
+
+        function allowDrag(ev) {
+            // 默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式
+            ev.preventDefault();
+        }
+
+        function drop(ev) {
+
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("imageId");
+            var image = document.getElementById(data);
+            ev.target.appendChild(image);
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="sourceStyle">
+        <img id="source" class="imgstyle" src="./img/kfm.jpg" alt="" draggable="true" ondragstart="drag(event)">
+    </div>
+
+    <div id="target" class="targetStyle" ondragover="allowDrag(event)" ondrop="drop(event)"></div>
+
+</body>
+
+</html>
