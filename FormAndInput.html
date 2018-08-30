@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <style>
+        form>section {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form id="myForm" action="#" method="post">
+        <section>
+            邮箱：<input type="email" placeholder="请输入邮箱号码">
+        </section>
+        <section>
+            电话号码：<input type="tel">
+        </section>
+        <section>
+            主页:<input type="url" autofocus>
+        </section>
+        <section>
+            搜索域：<input type="search">
+        </section>
+        <section>
+            进度: <input type="range" step="2" min="0" max="100" value="5">
+        </section>
+        <section>
+            数字: <input type="number" step="3" min="2" max="100">
+        </section>
+        <section>
+            颜色:<input type="color">
+        </section>
+        <section>
+            生日 (日期和时间): <input type="datetime">
+        </section>
+        <section>
+            生日 (无时区): <input type="datetime">
+        </section>
+        <section>
+            时间: <input type="time">
+        </section>
+        <section>
+            日期: <input type="date">
+        </section>
+        <section>
+            星期: <input type="week">
+        </section>
+        <section>
+            月份: <input type="month">
+        </section>
+        <section>
+            <input type="text" placeholder="请输入4到16个字符" autocomplete="on">
+        </section>
+        <section>
+            <input type="submit" value="提交到草稿箱" formaction="#" formmethod="get" formenctype="multipart/form-data" formnovalidate>
+        </section>
+        <section>
+            <input type="submit" value="提交">
+        </section>
+    </form>
+</body>
+
+</html>
